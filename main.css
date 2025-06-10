@@ -1,0 +1,60 @@
+/* main.css */
+
+/* Fonte base */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6f2ff; /* azul bebê */
+    color: #333;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #b3d9ff; /* tom mais forte de azul bebê */
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cabecalho h2 {
+    margin: 0;
+    font-size: 28px;
+    color: #004080; /* azul escuro para contraste */
+}
+
+/* Navegação */
+nav {
+    margin-top: 10px;
+}
+
+nav a button {
+    background-color: #cce6ff;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    border-radius: 8px;
+    color: #004080;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav a button:hover {
+    background-color: #99ccff;
+}
+
+/* Seção principal */
+main {
+    padding: 30px;
+    text-align: center;
+}
+
+/* Se você quiser adicionar uma seção depois, pode usar isso como base */
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin: auto;
+    max-width: 800px;
+}

@@ -55,6 +55,7 @@ window.addEventListener("DOMContentLoaded", () => {
             nomeCompleto: document.getElementById('nome').value,
             nomeOng: document.getElementById('titulo').value,
             telefone: document.getElementById('telefone').value,
+            sobre: document.getElementById('sobre').value,
             cpf: document.getElementById('cpf').value,
             cep: document.getElementById('cep').value,
             endereco: document.getElementById('endereco').value,

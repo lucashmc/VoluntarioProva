@@ -15,8 +15,8 @@ body {
 
 /* Cabeçalho */
 .cabecalho {
-    background-color: #0077cc;
-    color: white;
+    background-color: #b3d9ff;
+    color: rgb(24, 116, 153);
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;

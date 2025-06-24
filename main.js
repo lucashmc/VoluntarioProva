@@ -44,7 +44,30 @@ const pesquisarCep = async () => {
     }
 };
 
-// Só adiciona o evento depois que o DOM estiver carregado
+
 window.addEventListener("DOMContentLoaded", () => {
     document.getElementById('cep').addEventListener('blur', pesquisarCep);
+
+    document.querySelector('.formulario').addEventListener('submit', function (e) {
+        e.preventDefault(); // Impede erro 405
+
+        const ong = {
+            nomeCompleto: document.getElementById('nome').value,
+            nomeOng: document.getElementById('titulo').value,
+            telefone: document.getElementById('telefone').value,
+            cpf: document.getElementById('cpf').value,
+            cep: document.getElementById('cep').value,
+            endereco: document.getElementById('endereco').value,
+            cidade: document.getElementById('cidade').value,
+            estado: document.getElementById('estado').value,
+            categoria: document.getElementById('categoria').value
+        };
+
+        const ongs = JSON.parse(localStorage.getItem('ongs')) || [];
+        ongs.push(ong);
+        localStorage.setItem('ongs', JSON.stringify(ongs));
+
+        alert("ONG cadastrada com sucesso!");
+        this.reset(); // Limpa o formulário após salvar
+    });
 });

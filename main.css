@@ -58,3 +58,14 @@ section {
     margin: auto;
     max-width: 800px;
 }
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.card h2 {
+    margin-top: 0;
+    color: #0077cc;
+}

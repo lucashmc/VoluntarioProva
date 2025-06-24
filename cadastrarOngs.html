@@ -6,7 +6,7 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='cadastro.css'>
-    <script src='main.js'></script>
+    <script src='main.js'defer></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -17,7 +17,7 @@
             
         </nav>
     </header>
-  <!-- cadastramento da das ONGS -->
+  <!-- cadastramento  das ONGS -->
 <main class="container">
         <h1>Cadastramento de ONGS</h1>
        <label for="categoria">Categoria</label>
@@ -35,6 +35,9 @@
 
             <label for="titulo">nome da ONG</label>
             <input type="text" id="titulo" name="titulo" required>
+
+            <label for="sobre">Sobre oque é sua ONG</label>
+            <input type="text" id="sobre" name="sobre" required>
 
             <label for="telefone">Telefone:</label>
             <input type="tel" id="telefone" name="telefone" placeholder="(DDD) 00000-0000" required>
